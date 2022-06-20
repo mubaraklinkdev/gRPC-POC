@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.Server.Services";
+
+service FeedMeMorService{
+	rpc AddFood(Food) returns (HerIsYourFood);
+}
+
+message Food{
+
+	string pizza =1;
+	int32 howMany= 2;
+}
+
+message HerIsYourFood{
+
+	string IsServed =1;
+}
