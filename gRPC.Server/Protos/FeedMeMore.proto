@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "gRPC.Server.Services";
 
-service FeedMeMorService{
+service FeedMeMoreService{
 	rpc AddFood(Food) returns (HerIsYourFood);
 }
 

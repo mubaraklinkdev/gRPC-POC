@@ -2,7 +2,7 @@
 
 namespace gRPC.Server.Services
 {
-    public class FeedService : FeedMeMorService.FeedMeMorServiceBase
+    public class FeedService : FeedMeMoreService.FeedMeMoreServiceBase
     {
         private readonly ILogger<FeedService> _logger;
 

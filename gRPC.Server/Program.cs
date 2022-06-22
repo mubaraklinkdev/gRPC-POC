@@ -21,7 +21,6 @@ app.UseGrpcBrowser();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    //app.UseDeveloperExceptionPage();
     app.MapGrpcReflectionService();
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -35,8 +34,11 @@ app.MapControllers();
 
 app.UseRouting();
 
-app.MapGrpcService<FeedService>().AddToGrpcBrowserWithClient<FeedMeMorService.FeedMeMorServiceClient>(); 
+app.MapGrpcService<FeedService>()
+    .AddToGrpcBrowserWithClient<FeedMeMoreService.FeedMeMoreServiceClient>(); 
+
 app.UseGrpcBrowser();
+
 app.MapGrpcBrowser();
 
 app.MapGet("/", context =>
