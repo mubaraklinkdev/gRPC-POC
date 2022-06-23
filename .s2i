@@ -1,0 +1,2 @@
+environment
+	DOTNET_STARTUP_PROJECT:gRPC.Server
