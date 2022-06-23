@@ -1,2 +1,2 @@
 environment
-	DOTNET_STARTUP_PROJECT:gRPC.Server
+	DOTNET_STARTUP_PROJECT=gRPC.Server/gRPC.Server.csproj
